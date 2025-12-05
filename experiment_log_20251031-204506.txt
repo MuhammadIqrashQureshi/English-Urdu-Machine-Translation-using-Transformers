@@ -1,0 +1,69 @@
+Bleu: 58.09
+
+===== English→Urdu Translation Experiment Log =====
+
+Timestamp: 20251031-204506
+Device: cuda
+
+---- Hyperparameters ----
+{
+    "model": "facebook/mbart-large-50-many-to-many-mmt",
+    "learning_rate": 3e-05,
+    "batch_size": 8,
+    "epochs": 5,
+    "max_seq_length": 128,
+    "optimizer": "AdamW",
+    "fp16": true
+}
+
+---- Dataset Info ----
+Total Samples: 24525
+Train: 19864, Validation: 2208, Test: 2453
+
+---- Training Summary ----
+TrainOutput(global_step=12415, training_loss=0.3518162149937461, metrics={'train_runtime': 5473.7323, 'train_samples_per_second': 18.145, 'train_steps_per_second': 2.268, 'total_flos': 1821743461171200.0, 'train_loss': 0.3518162149937461, 'epoch': 5.0})
+
+---- Evaluation ----
+BLEU Score: 58.90
+
+---- Sample Translations ----
+EN: he can no longer wait
+UR Pred: وہ اب انتظار نہیں کر سکتا
+UR True: وہ مزید انتظار نہیں کر سکتا
+
+EN: what is zain drinking
+UR Pred: زین کیا پیتا ہے
+UR True: زین پینے کیا ہے
+
+EN: dont burst my bubble
+UR Pred: میری جھاڑو کو مت توڑو
+UR True: میرا بلبلا مت پھٹاؤ
+
+EN: are you still married
+UR Pred: کیا آپ اب بھی شادی شدہ ہیں
+UR True: کیا آپ اب بھی شادی شدہ ہیں
+
+EN: i will come back later
+UR Pred: میں بعد میں واپس آؤں گا۔
+UR True: میں بعد میں واپس آؤں گا
+
+EN: let me take it back for you
+UR Pred: میں آپ کے لئے اسے واپس لے جانے دو
+UR True: میں آپ کے لئے اسے واپس لے دو
+
+EN: zain was impolite
+UR Pred: زین بے وقوف تھا۔
+UR True: زین ناشائستہ تھا
+
+EN: zain shaved his head
+UR Pred: زین نے اپنا سر منڈوایا
+UR True: زین نے اپنا سر منڈا یا
+
+EN: it wouldn't surprise me	
+UR Pred: یہ مجھے حیران نہیں کرے گا
+UR True: مجھے حیرانی نہیں ہو گی۔
+
+EN: no one else was hurt
+UR Pred: کسی اور کو چوٹ نہیں آئی
+UR True: کوئی اور زخمی نہیں ہوا
+
