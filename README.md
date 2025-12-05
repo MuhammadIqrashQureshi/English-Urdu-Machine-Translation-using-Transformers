@@ -63,21 +63,11 @@ Accelerate
 
 # Results
 BLEU: 58.90
+
+Translations:
+
 <img width="317" height="156" alt="image" src="https://github.com/user-attachments/assets/80e670b7-f97f-46ea-b90a-c78bffc5b470" />
 
-# Project Structure
-├── data/
-│   ├── english-corpus.txt
-│   ├── urdu-corpus.txt
-├── final_model_en_ur_mbart/
-│   ├── config.json
-│   ├── pytorch_model.bin
-│   ├── tokenizer.json
-│   └── vocab files
-├── translations.csv
-├── experiment_log_.txt
-├── Model Implementation.py
-└── README.md
 
 # How to Run the Code
 1. Install Dependencies
